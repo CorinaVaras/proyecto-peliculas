@@ -17,15 +17,7 @@ body{
     overflow: auto;
     background: #252327
 }
-.icon{
-    width: 20px;
-    height: 20px;
-    border: 0px;
-    position: absolute;
-    top: 1px;
-    margin-left: 65%;
-    margin-top: 3.3%; 
-}
+
 .rowNew {
     /* display: -webkit-box;
     display: -ms-flexbox;

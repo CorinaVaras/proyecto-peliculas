@@ -12,7 +12,7 @@ document.getElementById('search-bar').addEventListener('keydown', (e) => {
 			html.innerHTML='';
 			html.className= 'custom-container row';
 				json.Search.map((i) => {
-				html.innerHTML +=  `<div class="card-group col-2 custom-card">
+				html.innerHTML +=  `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 				<div class="card">
 				<img class="card-img-top custom-img" src="${i.Poster}" alt="Card image cap">
 				<div class="card-body">
@@ -40,7 +40,7 @@ document.getElementById('action').addEventListener ('click', () => {
 		.then(response => response.json())
 		.then(data  => { 
 			
-		html.innerHTML +=  `<div class="card-group col-2 custom-card">
+		html.innerHTML +=  `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
@@ -64,7 +64,7 @@ document.getElementById('aventure').addEventListener ('click', () => {
 		fetch(`http://www.omdbapi.com/?i=${element}&apikey=fbdf5d5c`)
 		.then(response => response.json())
 		.then(data  => { 
-		html.innerHTML +=  `<div class="card-group col-2 custom-card">
+		html.innerHTML +=  `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
@@ -88,7 +88,7 @@ document.getElementById('biography').addEventListener ('click', () => {
 		fetch(`http://www.omdbapi.com/?i=${element}&apikey=fbdf5d5c`)
 		.then(response => response.json())
 		.then(data  => { 
-		html.innerHTML +=  `<div class="card-group col-2 custom-card">
+		html.innerHTML +=  `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
@@ -113,7 +113,7 @@ document.getElementById('documentary').addEventListener ('click', () => {
 		fetch(`http://www.omdbapi.com/?i=${element}&apikey=fbdf5d5c`)
 		.then(response => response.json())
 		.then(data  => { 
-		html.innerHTML +=  `<div class="card-group col-2 custom-card">
+		html.innerHTML +=  `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
@@ -137,7 +137,7 @@ document.getElementById('fantasy').addEventListener ('click', () => {
 		fetch(`http://www.omdbapi.com/?i=${element}&apikey=fbdf5d5c`)
 		.then(response => response.json())
 		.then(data  => { 
-		html.innerHTML +=  `<div class="card-group col-2 custom-card">
+		html.innerHTML +=  `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
@@ -162,7 +162,7 @@ document.getElementById('animated').addEventListener ('click', () => {
 		fetch(`http://www.omdbapi.com/?i=${element}&apikey=fbdf5d5c`)
 		.then(response => response.json())
 		.then(data  => { 
-		html.innerHTML +=  `<div class="card-group col-2 custom-card">
+		html.innerHTML +=  `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
@@ -185,7 +185,7 @@ document.getElementById('mystery').addEventListener('click', () => {
 		fetch(`http://www.omdbapi.com/?i=${element}&apikey=fbdf5d5c`)
 			.then(response => response.json())
 			.then(data => {
-				html.innerHTML += `<div class="card-group col-2 custom-card">
+				html.innerHTML += `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
@@ -208,7 +208,7 @@ document.getElementById('sci').addEventListener('click', () => {
 		fetch(`http://www.omdbapi.com/?i=${element}&apikey=fbdf5d5c`)
 			.then(response => response.json())
 			.then(data => {
-				html.innerHTML += `<div class="card-group col-2 custom-card">
+				html.innerHTML += `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
@@ -231,7 +231,7 @@ document.getElementById('suspense').addEventListener('click', () => {
 		fetch(`http://www.omdbapi.com/?i=${element}&apikey=fbdf5d5c`)
 			.then(response => response.json())
 			.then(data => {
-				html.innerHTML += `<div class="card-group col-2 custom-card">
+				html.innerHTML += `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
@@ -255,7 +255,7 @@ document.getElementById('hero').addEventListener('click', () => {
 		fetch(`http://www.omdbapi.com/?i=${element}&apikey=fbdf5d5c`)
 			.then(response => response.json())
 			.then(data => {
-				html.innerHTML += `<div class="card-group col-2 custom-card">
+				html.innerHTML += `<div class="card-group col-sm-12 col-md-6 col-lg-2 custom-card">
 		<div class="card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		<div class="card-body">
