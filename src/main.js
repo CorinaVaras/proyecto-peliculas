@@ -282,7 +282,7 @@ moviesEstreno.forEach(element => {
 		.then(data => {
 			estPremiere.innerHTML += 
 		`
-		<div class="card-group col-2 simple-card">
+		<div class="card-group col-sm-12 col-md-6 col-lg-2 simple-card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		`;
 		})
@@ -300,7 +300,7 @@ moviesHero.forEach(element => {
 		.then(data => {
 			estHero.innerHTML += 
 		`
-		<div class="card-group col-2 simple-card">
+		<div class="card-group col-sm-12 col-md-6 col-lg-2 simple-card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		`;
 		})
@@ -319,7 +319,7 @@ const serieTv = ['tt4686698', 'tt7366338', 'tt2372162', 'tt5180504', 'tt7949218'
 		.then(data => {
 			estMovies.innerHTML += 
 		`
-		<div class="card-group col-2 simple-card">
+		<div class="card-group col-sm-12 col-md-6 col-lg-2 simple-card">
 		<img class="card-img-top custom-img" src="${data.Poster}" alt="Card image cap">
 		`;
 		})
